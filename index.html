@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script type="text/javascript">
+            var options = {
+                "duration": {
+                    description: "Hourglass loading speed",
+                    select: "#page_wrap",
+                    attr: 'data-duration',
+                    type: 'int',
+                    values: [100, 10000],
+                    default: 3000,
+                },
+                "grainsNumber": {
+                    description: "Number of grains",
+                    select: ".countdown",
+                    attr: 'data-grains',
+                    type: 'int',
+                    values: [1, 1000],
+                    default: 20,
+                },
+                "date": {
+                    description: "Date",
+                    select: ".countdown",
+                    attr: 'date',
+                    type: 'date',
+                    default: "2029-01-01",
+                },
+                "grainsSpeed": {
+                    description: "Grains speed",
+                    select: ".countdown",
+                    attr: 'data-speed',
+                    type: 'int',
+                    values: [1, 10000],
+                    default: 3000,
+                },
+                "sandColor": {
+                    description: "Sand color",
+                    select: ".countdown",
+                    attr: 'data-color',
+                    type: 'color',
+                    default: "#fdf705",
+                },
+                "textColor": {
+                    description: "Hourglass text color",
+                    select: ".countdown",
+                    attr: 'data-text-color',
+                    type: 'color',
+                    default: "#fdf705",
+                },
+                "topSlideBorderColor": {
+                    description: "Top slide border color",
+                    select: ".top.slide",
+                    attr: 'data-border-color',
+                    type: 'color',
+                    default: "#fdf705",
+                },
+                "topSlideBkgColor": {
+                    description: "Top slide background color",
+                    select: ".top.slide",
+                    attr: 'data-background-color',
+                    type: 'color',
+                    default: "#000000",
+                },
+                "bottomSlideBorderColor": {
+                    description: "Bottom slide border color",
+                    select: ".bottom.slide",
+                    attr: 'data-border-color',
+                    type: 'color',
+                    default: "#fdf705",
+                },
+                "bottomSlideBkgColor": {
+                    description: "Bottom slide background color",
+                    select: ".bottom.slide",
+                    attr: 'data-background-color',
+                    type: 'color',
+                    default: "#000000",
+                },
+            };
+        </script>
+        <script type="text/javascript" src="http://preview.stephino.com/js/frame.js"></script>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+        <title>Silicate</title>
+        <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+        <link rel="icon" type="image/png" href="favicon.ico">
+        <link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/bootstrap-responsive.css"/>
+        <link rel="stylesheet" href="css/bootstrap-modal.css"/>
+        <link rel="stylesheet" href="css/ie.css"/>
+        <link rel="stylesheet" href="css/jquery.jqplot.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body class="black">
+        <div id="page_wrap" data-duration="3000">
+            <div class="top slide" data-border-color="#fdf705">
+                <span><a href="javascript:void(0);" class="logo">Silicate</a></span>
+                <!--<a href="javascript:void(0);" class="social youtube">Youtube</a>-->
+                <!--<a href="javascript:void(0);" class="social yandex">Yandex</a>-->
+                <!--<a href="javascript:void(0);" class="social vkontakte">Vkontakte</a>-->
+                <!--<a href="javascript:void(0);" class="social vk">Vk</a>-->
+                <a href="javascript:void(0);" class="social vimeo">Vimeo</a>
+                <a href="javascript:void(0);" class="social twitter">Twitter</a>
+                <!--<a href="javascript:void(0);" class="social tumblr">Tumblr</a>-->
+                <!--<a href="javascript:void(0);" class="social steam">Steam</a>-->
+                <a href="javascript:void(0);" class="social stackoverflow">Stackoverflow</a>
+                <!--<a href="javascript:void(0);" class="social soundcloud">Soundcloud</a>-->
+                <a href="javascript:void(0);" class="social skype">Skype</a>
+                <!--<a href="javascript:void(0);" class="social share">Share</a>-->
+                <!--<a href="javascript:void(0);" class="social rss">Rss</a>-->
+                <!--<a href="javascript:void(0);" class="social readability">Readability</a>-->
+                <!--<a href="javascript:void(0);" class="social read-it-later">Read-it-Later</a>-->
+                <!--<a href="javascript:void(0);" class="social pocket">Pocket</a>-->
+                <a href="javascript:void(0);" class="social pinterest">Pinterest</a>
+                <!--<a href="javascript:void(0);" class="social picasa">Picasa</a>-->
+                <!--<a href="javascript:void(0);" class="social openid">Openid</a>-->
+                <!--<a href="javascript:void(0);" class="social myspace">Myspace</a>-->
+                <!--<a href="javascript:void(0);" class="social moikrug">Moikrug</a>-->
+                <a href="javascript:void(0);" class="social linked-in">Linked-in</a>
+                <!--<a href="javascript:void(0);" class="social lifejournal">Lifejournal</a>-->
+                <!--<a href="javascript:void(0);" class="social lastfm">Lastfm</a>-->
+                <!--<a href="javascript:void(0);" class="social jabber">Jabber</a>-->
+                <!--<a href="javascript:void(0);" class="social instapaper">Instapaper</a>-->
+                <!--<a href="javascript:void(0);" class="social habrahabr">Habrahabr</a>-->
+                <!--<a href="javascript:void(0);" class="social google">Google</a>-->
+                <!--<a href="javascript:void(0);" class="social github-octoface">Github-octoface</a>-->
+                <!--<a href="javascript:void(0);" class="social github-circle">Github-circle</a>-->
+                <!--<a href="javascript:void(0);" class="social foursquare">Foursquare</a>-->
+                <a href="javascript:void(0);" class="social flickr">Flickr</a>
+                <!--<a href="javascript:void(0);" class="social flattr">Flattr</a>-->
+                <a href="javascript:void(0);" class="social facebook">Facebook</a>
+                <!--<a href="javascript:void(0);" class="social evernote">Evernote</a>-->
+                <!--<a href="javascript:void(0);" class="social email">Email</a>-->
+                <!--<a href="javascript:void(0);" class="social dropbox">Dropbox</a>-->
+                <!--<a href="javascript:void(0);" class="social blogspot">Blogspot</a>-->
+                <!--<a href="javascript:void(0);" class="social bitbucket">Bitbucket</a>-->
+                <!--<a href="javascript:void(0);" class="social youtube-play">Youtube-play</a>-->
+            </div>
+            
+            <div class="large space"></div>
+            
+            <h1>Silicate</h1>
+            <h2>Sit tight. We are monkeying around with the new design.</h2>
+            
+            <div class="small space"></div>
+            
+            <div class="countdown" data-grains="20" date="2029-01-01" data-speed="3000" data-color="#fdf705" data-text-color="#000000"></div>
+            <div class="bottom slide" data-border-color="#fdf705">
+                <span><a class="map" data-target="#map" data-toggle="modal" href="javascript:void(0);">Our address</a></span>
+                <a href="javascript:void(0);" title="About us" data-target="#about-us" data-toggle="modal" class="feedback about-us">&#xF045;</a>
+                <a href="javascript:void(0);" title="Contact us" data-target="#contact" data-toggle="modal" class="feedback contact">&#xF151;</a>
+                <a href="javascript:void(0);" title="Newsletter" data-target="#newsletter" data-toggle="modal" class="feedback newsletter">&#xF152;</a>
+            </div>
+        </div>
+        
+        <!--About us-->
+        <div class="modal hide fade" id="about-us" tabindex="1" role="dialog" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>About us</h3>
+            </div>
+            <div class="modal-body">
+                We are a creative agency based in Europe.<br/>
+                Lorem ipsum dolor sit amet is the way we start all of our sentences.<br/><br/>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/>
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br/><br/>
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br/>
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+        </div>
+        
+        <!--Newsletter form-->
+        <div class="modal hide fade" id="newsletter" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Subscribe to our newsletter</h3>
+            </div>
+            <div class="modal-body">
+                If you'd like to hear more from us, please send us your e-mail address.
+                <form method="post" action="newsletter.php" class="validate text-center">
+                    <input class="input-block-level" name="email" type="email" placeholder="E-mail" required /><br/>
+                    <span class="btn  btn-large btn-block submit"><i class="icon-envelope"></i> Submit</span>
+                </form>
+            </div>
+        </div>
+        
+        <!--Contact form-->
+        <div class="modal hide fade" id="contact" tabindex="0" role="dialog" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Contact us</h3>
+            </div>
+            <div class="modal-body">
+                Don't hesitate to contact us.
+                <form method="post" action="contact.php" class="validate text-center">
+                    <input class="input-block-level" name="name" type="text" placeholder="Name" required /><br/>
+                    <input class="input-block-level" name="email" type="email" placeholder="E-mail" required /><br/>
+                    <textarea class="input-block-level" name="content" placeholder="Your message" required ></textarea>
+                    <span class="btn btn-large btn-block submit"><i class="icon-ok"></i> Send</span>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Map -->
+        <div class="modal hide fade" id="map" tabindex="1" role="dialog" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Map</h3>
+            </div>
+            <div class="modal-body">
+                <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&amp;t=m&amp;ll=40.400425,-74.085617&amp;spn=0.183016,0.291138&amp;z=11&amp;output=embed"></iframe>
+            </div>
+        </div>
+        
+        <!--Javascript-->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-modal.js"></script>
+        <script type="text/javascript" src="js/bootstrap-modalmanager.js"></script>
+        <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="js/additional-methods.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+        <script type="text/javascript" src="js/jquery.transit.js"></script>
+        <script type="text/javascript" src="js/functions.js"></script>
+    </body>
+</html>

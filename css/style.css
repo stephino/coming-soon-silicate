@@ -1,0 +1,839 @@
+/**
+ * TABLE OF CONTENTS
+ * 
+ * 1. General
+ *   1.1. Fonts
+ *       1.1.1. Lobster
+ *       1.1.2. PT Sans
+ *       1.1.3. Novecento Wide
+ *       1.1.4. Batch
+ *       1.1.5. Ebis
+ *       1.1.6. Entypo
+ *       1.1.7. Grands
+ *       1.1.8. Quicksand
+ *       1.1.9. Grand Hotel
+ *       1.1.10. Cabin Sketch
+ *   1.2. Body
+ *       1.2.1. Selection colors
+ *       1.2.2. Icons
+ *       1.2.3. Headings
+ *       1.2.4. Anchors
+ *       1.2.5. Spaces
+ *       1.2.6. Page wrap
+ * 2. My Custom ScrollBar
+ * 3. Modals
+ * 4. Hourglass
+ *   4.1. Triangles
+ *   4.2. Rims
+ *   4.3. Grain
+ * 5. Slides
+ * 6. Logo
+ * 7. Feedback icons
+ * 8. Social
+ * 9. Responsiveness
+ *   9.1. Max 479px
+ *   9.2. Min 480px
+ *   9.3. Min 768px
+ *   9.4. Min 980px
+ *   9.5. Min 1200px
+ *   9.6. Portrait
+ *   9.7. Landscape
+ *
+ * Copyright 2013 Stephino
+ */
+
+/* 1. General */
+/** 1.1. Fonts **/
+
+/*** 1.1.1. Lobster ***/
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+/*** 1.1.2. PT Sans ***/
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,latin-ext,cyrillic);
+
+/*** 1.1.8. Quicksand ***/
+@import url(http://fonts.googleapis.com/css?family=Quicksand:400,300,700);
+
+/*** 1.1.9. Grand hotel ***/
+@import url(http://fonts.googleapis.com/css?family=Grand+Hotel&subset=latin,latin-ext);
+
+/*** 1.1.10. Cabin+Sketch ***/
+@import url(http://fonts.googleapis.com/css?family=Cabin+Sketch:400,700);
+
+/*** 1.1.3. Novecento Wide ***/
+@font-face {font-family: 'NovecentowideBold';src: url('../img/fonts/novecentowide_bold_macroman/Novecentowide-Bold-webfont.eot');src: url('../img/fonts/novecentowide_bold_macroman/Novecentowide-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../img/fonts/novecentowide_bold_macroman/Novecentowide-Bold-webfont.woff') format('woff'), url('../img/fonts/novecentowide_bold_macroman/Novecentowide-Bold-webfont.ttf') format('truetype'), url('../img/fonts/novecentowide_bold_macroman/Novecentowide-Bold-webfont.svg#NovecentowideBold') format('svg');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'NovecentowideBook';src: url('../img/fonts/novecentowide_book_macroman/Novecentowide-Book-webfont.eot');src: url('../img/fonts/novecentowide_book_macroman/Novecentowide-Book-webfont.eot?#iefix') format('embedded-opentype'), url('../img/fonts/novecentowide_book_macroman/Novecentowide-Book-webfont.woff') format('woff'), url('../img/fonts/novecentowide_book_macroman/Novecentowide-Book-webfont.ttf') format('truetype'), url('../img/fonts/novecentowide_book_macroman/Novecentowide-Book-webfont.svg#NovecentowideBook') format('svg');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'NovecentowideDemiBold';src: url('../img/fonts/novecentowide_demibold_macroman/Novecentowide-DemiBold-webfont.eot');src: url('../img/fonts/novecentowide_demibold_macroman/Novecentowide-DemiBold-webfont.eot?#iefix') format('embedded-opentype'), url('../img/fonts/novecentowide_demibold_macroman/Novecentowide-DemiBold-webfont.woff') format('woff'), url('../img/fonts/novecentowide_demibold_macroman/Novecentowide-DemiBold-webfont.ttf') format('truetype'), url('../img/fonts/novecentowide_demibold_macroman/Novecentowide-DemiBold-webfont.svg#NovecentowideDemiBold') format('svg');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'NovecentowideLight';src: url('../img/fonts/novecentowide_light_macroman/Novecentowide-Light-webfont.eot');src: url('../img/fonts/novecentowide_light_macroman/Novecentowide-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../img/fonts/novecentowide_light_macroman/Novecentowide-Light-webfont.woff') format('woff'), url('../img/fonts/novecentowide_light_macroman/Novecentowide-Light-webfont.ttf') format('truetype'), url('../img/fonts/novecentowide_light_macroman/Novecentowide-Light-webfont.svg#NovecentowideLight') format('svg');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'NovecentowideMedium';src: url('../img/fonts/novecentowide_medium_macroman/Novecentowide-Medium-webfont.eot');src: url('../img/fonts/novecentowide_medium_macroman/Novecentowide-Medium-webfont.eot?#iefix') format('embedded-opentype'), url('../img/fonts/novecentowide_medium_macroman/Novecentowide-Medium-webfont.woff') format('woff'), url('../img/fonts/novecentowide_medium_macroman/Novecentowide-Medium-webfont.ttf') format('truetype'), url('../img/fonts/novecentowide_medium_macroman/Novecentowide-Medium-webfont.svg#NovecentowideMedium') format('svg');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'NovecentowideNormal';src: url('../img/fonts/novecentowide_normal_macroman/Novecentowide-Normal-webfont.eot');src: url('../img/fonts/novecentowide_normal_macroman/Novecentowide-Normal-webfont.eot?#iefix') format('embedded-opentype'), url('../img/fonts/novecentowide_normal_macroman/Novecentowide-Normal-webfont.woff') format('woff'), url('../img/fonts/novecentowide_normal_macroman/Novecentowide-Normal-webfont.ttf') format('truetype'), url('../img/fonts/novecentowide_normal_macroman/Novecentowide-Normal-webfont.svg#NovecentowideNormal') format('svg');font-weight: normal;font-style: normal;}
+
+/*** 1.1.4. Batch ***/
+@font-face {
+    font-family: 'batchregular';
+    src: url('../img/fonts/batch/batch-icons-webfont.eot');
+    src: url('../img/fonts/batch/batch-icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../img/fonts/batch/batch-icons-webfont.woff') format('woff'),
+         url('../img/fonts/batch/batch-icons-webfont.ttf') format('truetype'),
+         url('../img/fonts/batch/batch-icons-webfont.svg#batchregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*** 1.1.5. Ebis ***/
+@font-face {
+    font-family: 'ebisuregular';
+    src: url('../img/fonts/ebis/ebisuregular-webfont.eot');
+    src: url('../img/fonts/ebis/ebisuregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../img/fonts/ebis/ebisuregular-webfont.woff') format('woff'),
+         url('../img/fonts/ebis/ebisuregular-webfont.ttf') format('truetype'),
+         url('../img/fonts/ebis/ebisuregular-webfont.svg#ebisuregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ebisuextralight';
+    src: url('../img/fonts/ebis/ebisuextralight-webfont.eot');
+    src: url('../img/fonts/ebis/ebisuextralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../img/fonts/ebis/ebisuextralight-webfont.woff') format('woff'),
+         url('../img/fonts/ebis/ebisuextralight-webfont.ttf') format('truetype'),
+         url('../img/fonts/ebis/ebisuextralight-webfont.svg#ebisuextralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ebisulight';
+    src: url('../img/fonts/ebis/ebisulight-webfont.eot');
+    src: url('../img/fonts/ebis/ebisulight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../img/fonts/ebis/ebisulight-webfont.woff') format('woff'),
+         url('../img/fonts/ebis/ebisulight-webfont.ttf') format('truetype'),
+         url('../img/fonts/ebis/ebisulight-webfont.svg#ebisulight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ebisubold';
+    src: url('../img/fonts/ebis/ebisubold-webfont.eot');
+    src: url('../img/fonts/ebis/ebisubold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../img/fonts/ebis/ebisubold-webfont.woff') format('woff'),
+         url('../img/fonts/ebis/ebisubold-webfont.ttf') format('truetype'),
+         url('../img/fonts/ebis/ebisubold-webfont.svg#ebisubold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*** 1.1.6. Entypo ***/
+/*Entypo pictograms by Daniel Bruce â€” www.entypo.com*/
+@font-face {
+    font-family: "entypo";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../img/fonts/entypo/entypo.eot?#iefix") format("embedded-opentype"), url("../img/fonts/entypo/entypo.woff") format("woff"), url("../img/fonts/entypo/entypo.ttf") format("truetype"), url("../img/fonts/entypo/entypo.svg#entypo") format("svg");
+}
+@font-face {
+    font-family: "entypo_social";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../img/fonts/entypo/entypo-social.eot?#iefix") format("embedded-opentype"), url("../img/fonts/entypo/entypo-social.woff") format("woff"), url("../img/fonts/entypo/entypo-social.ttf") format("truetype"), url("../img/fonts/entypo/entypo-social.svg#entypo-social") format("svg");
+}
+@font-face {
+    font-family: "entypo-logo";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../img/fonts/entypo/entypo-logo-webfont.eot?#iefix") format("embedded-opentype"), url("../img/fonts/entypo/entypo-logo-webfont.woff") format("woff"), url("../img/fonts/entypo/entypo-logo-webfont.ttf") format("truetype"), url("../img/fonts/entypo/entypo-logo-webfont.svg#entypo-logo") format("svg");
+}
+
+/*** 1.1.7. Grands ***/
+@font-face {
+    font-family: "Grands";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../img/fonts/grands/Grands.eot?#iefix") format("embedded-opentype"), url("../img/fonts/grands/Grands.woff") format("woff"), url("../img/fonts/grands/Grands.ttf") format("truetype"), url("../img/fonts/grands/Grands.svg#Grands") format("svg");
+}
+
+/** 1.2. Body **/
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    text-rendering: geometricprecision;
+}
+
+/** 1.2.1. Selection colors ***/
+::selection { 
+    color: #fff;
+    text-shadow: none !important;
+}
+::-moz-selection {
+    color: #fff;
+    text-shadow: none !important;
+}
+body.red ::selection { 
+    background: red;
+}
+body.red ::-moz-selection {
+    background: red;
+}
+body.green ::selection { 
+    background: #7fcb54;
+}
+body.green ::-moz-selection {
+    background: #7fcb54;
+}
+body.orange ::selection { 
+    background: orange;
+}
+body.orange ::-moz-selection {
+    background: orange;
+}
+body.yellow ::selection { 
+    background: yellow;
+}
+body.yellow ::-moz-selection {
+    background: yellow;
+}
+body.blue ::selection { 
+    background: #11b3f2;
+}
+body.blue ::-moz-selection {
+    background: #11b3f2;
+}
+body.indigo ::selection { 
+    background: indigo;
+}
+body.indigo ::-moz-selection {
+    background: indigo;
+}
+body.violet ::selection { 
+    background: violet;
+}
+body.violet ::-moz-selection {
+    background: violet;
+}
+body.black ::selection { 
+    background: black;
+}
+body.black ::-moz-selection {
+    background: black;
+}
+body.white ::selection { 
+    background: white;
+    color: #000;
+}
+body.white ::-moz-selection {
+    background: white;
+}
+body.grey ::selection { 
+    background: grey;
+}
+body.grey ::-moz-selection {
+    background: grey;
+}
+
+/*** 1.2.2. Icons ***/
+.icon {
+    font-family: batchregular;
+    font-style: normal;
+}
+
+/*** 1.2.3. Headings ***/
+h1, h2, h3, h4, h5, h6 {
+    font-family: NovecentowideMedium;
+    color: #000;
+}
+h1 {
+    font-family: NovecentowideLight;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 0px 1px 3px #000;
+    text-align: center;
+    line-height: 45px;
+}
+h2 {
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 45px;
+    text-align: center;
+    text-shadow: 0px 1px 3px #000;
+    font-family: NovecentowideLight;
+}
+h3 {
+    color: #000;
+    font-size: 15px;
+    font-family: NovecentowideLight;
+    font-weight: 100;
+}
+section h3 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/*** 1.2.4. Anchors ***/
+a {
+    text-decoration: none;
+    color: #579f72;
+}
+
+/*** 1.2.5. Spaces ***/
+.space {
+    position: relative;
+    clear:both;
+    margin: 0 auto;
+    width: 100%;
+    display: inline-block;
+}
+.large.space {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.medium.space {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.small.space {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*** 1.2.6. Page wrap ***/
+#page_wrap {
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../img/overlay/sharp.jpg");
+    background-origin: padding-box;
+    background-position: 50% 100%;
+    background-repeat: repeat;
+    background-size: 120% auto;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+#page_wrap:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/overlay/1.png) repeat 0 0 transparent;
+    z-index: 0;
+}
+#page_wrap > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* 2. My Custom ScrollBar */
+.mCSB_container {
+    margin-right: 0px;
+    overflow: hidden;
+    width: auto;
+}
+.mCSB_container.mCS_no_scrollbar {
+    margin-right: 0;
+}
+.mCS_disabled .mCSB_container.mCS_no_scrollbar, .mCS_destroyed .mCSB_container.mCS_no_scrollbar {
+    margin-right: 30px;
+}
+.mCustomScrollBox .mCSB_scrollTools {
+    height: 100%;
+    right: 0;
+    top: 0;
+    width: 10px;
+}
+.mCSB_scrollTools .mCSB_draggerContainer {
+    -moz-box-sizing: border-box;
+    height: 100%;
+}
+.mCSB_scrollTools .mCSB_buttonUp + .mCSB_draggerContainer {
+    padding-bottom: 40px;
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+    border-radius: 0px;
+    height: 100%;
+    margin: 0 auto;
+    width: 10px;
+}
+.mCSB_scrollTools .mCSB_dragger {
+    cursor: pointer;
+    height: 30px;
+    width: 100%;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    border-radius: 0;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    width: 10px;
+}
+.mCSB_scrollTools .mCSB_buttonUp, .mCSB_scrollTools .mCSB_buttonDown {
+    cursor: pointer;
+    height: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.mCSB_scrollTools .mCSB_buttonDown {
+    bottom: 0;
+    margin-top: -40px;
+}
+.mCSB_horizontal .mCSB_container {
+    height: auto;
+    margin-bottom: 30px;
+    margin-right: 0;
+    overflow: hidden;
+}
+.mCSB_horizontal .mCSB_container.mCS_no_scrollbar {
+    margin-bottom: 0;
+}
+.mCS_disabled .mCSB_horizontal .mCSB_container.mCS_no_scrollbar, .mCS_destroyed .mCSB_horizontal .mCSB_container.mCS_no_scrollbar {
+    margin-bottom: 30px;
+    margin-right: 0;
+}
+.mCSB_horizontal.mCustomScrollBox .mCSB_scrollTools {
+    bottom: 0;
+    height: 16px;
+    left: 0;
+    overflow: hidden;
+    right: auto;
+    top: auto;
+    width: 100%;
+}
+.mCSB_horizontal .mCSB_scrollTools .mCSB_draggerContainer {
+    -moz-box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    width: auto;
+}
+.mCSB_horizontal .mCSB_scrollTools .mCSB_buttonLeft + .mCSB_draggerContainer {
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+.mCSB_horizontal .mCSB_scrollTools .mCSB_draggerRail {
+    border-radius: 0px;
+    height: 2px;
+    margin: 7px 0;
+    width: 100%;
+}
+.mCSB_horizontal .mCSB_scrollTools .mCSB_dragger {
+    height: 100%;
+    width: 30px;
+}
+.mCSB_horizontal .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    border-radius: 10px 10px 10px 10px;
+    height: 4px;
+    margin: 6px auto;
+    width: 100%;
+}
+.mCSB_horizontal .mCSB_scrollTools .mCSB_buttonLeft, .mCSB_horizontal .mCSB_scrollTools .mCSB_buttonRight {
+    cursor: pointer;
+    float: left;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 20px;
+}
+.mCSB_horizontal .mCSB_scrollTools .mCSB_buttonRight {
+    bottom: auto;
+    float: right;
+    margin-left: -40px;
+    margin-top: -16px;
+    right: 0;
+}
+.mCustomScrollBox .mCSB_scrollTools {
+    opacity: 0.25;
+}
+.mCustomScrollBox:hover .mCSB_scrollTools {
+    opacity: 1;
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+    background: none repeat scroll 0 0 rgba(0,0,0,0.5);
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: none repeat scroll 0 0 rgba(255,255,255, 0.95);
+}
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+}
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+}
+.mCSB_scrollTools .mCSB_buttonUp, .mCSB_scrollTools .mCSB_buttonDown, .mCSB_scrollTools .mCSB_buttonLeft, .mCSB_scrollTools .mCSB_buttonRight {
+    background-image: url("mCSB_buttons.png");
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+.mCSB_scrollTools .mCSB_buttonUp {
+    background-position: 0 0;
+}
+.mCSB_scrollTools .mCSB_buttonDown {
+    background-position: 0 -20px;
+}
+.mCSB_scrollTools .mCSB_buttonLeft {
+    background-position: 0 -40px;
+}
+.mCSB_scrollTools .mCSB_buttonRight {
+    background-position: 0 -56px;
+}
+.mCSB_scrollTools .mCSB_buttonUp:hover, .mCSB_scrollTools .mCSB_buttonDown:hover, .mCSB_scrollTools .mCSB_buttonLeft:hover, .mCSB_scrollTools .mCSB_buttonRight:hover {
+    opacity: 0.75;
+}
+.mCSB_scrollTools .mCSB_buttonUp:active, .mCSB_scrollTools .mCSB_buttonDown:active, .mCSB_scrollTools .mCSB_buttonLeft:active, .mCSB_scrollTools .mCSB_buttonRight:active {
+    opacity: 0.9;
+}
+
+/* 3. Modals */
+.modal {
+    color: #000;
+}
+.modal h3 {
+    font-family: NovecentowideLight;
+    font-size: 20px;
+    line-height: 35px;
+}
+.modal-header .close {
+    font-family: novecentowidelight;
+    font-size: 40px;
+    line-height: 35px;
+    margin-top: 2px;
+}
+
+/* 4. Hourglass */
+.hourglass {
+    height: 260px;
+    width: 75%;
+    max-width: 150px;
+    min-width: 100px;
+    position: relative;
+    margin: 30px auto 90px;
+    overflow: hidden;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+    border-radius: 2px;
+}
+.hourglass .fixed {
+    position: absolute;
+    border-radius: 10px;
+    width: 300%;
+    height: 200%;
+    top: -50%;
+    left: -100%;
+    z-index: 1;
+    background: url(../img/overlay/blurred.jpg) repeat 50% 100% fixed;
+    background-size: 120% auto;
+}
+.hourglass > .holder {
+    height: 100px;
+    position: absolute;
+    width: 100%;
+}
+.hourglass > .top.holder {
+    top: 30px;
+}
+.hourglass > .bottom.holder {
+    bottom: 30px;
+}
+.hourglass > .holder > .glass {
+    height: 86%;
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+.hourglass > .holder.bottom > .glass {
+    height: 14%;
+}
+/** 4.1. Triangles **/
+.hourglass > .holder > .glass > .triangle {
+    width: 0;
+    height: 0;
+    border-color: #5c503b transparent;
+    border-style: solid;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+.hourglass > .holder > .triangle {
+    width: 0;
+    height: 0;
+    border-color: rgba(0,0,0,0.4) transparent;
+    border-style: solid;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    margin-left: 20px;
+}
+.hourglass > .holder.top > .glass > .triangle, .hourglass > .holder.top > .triangle {
+    border-width: 100px 50px 0px 50px;
+}
+.hourglass > .holder.bottom > .glass > .triangle, .hourglass > .holder.bottom > .triangle {
+    border-width: 0px 50px 100px 50px;
+}
+
+/** 4.2. Rims **/
+.rim {
+    background: #5c503b;
+    font-family: "NovecentowideBook";
+    text-align: center;
+    font-size: 22px;
+    vertical-align: baseline;
+    line-height: 30px;
+    color: #fff;
+    height: 30px;
+    min-height: 30px;
+    display: block;
+    position: absolute;
+    z-index: 4;
+}
+.rim.top {
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 1px 0px rgba(0,0,0,0.6) inset, 0px 2px 0px rgba(255,255,255,0.3) inset;
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.6);
+    border-radius: 2px 2px 20px 20px;
+}
+.rim.bottom {
+    bottom: 0;
+    width: 100%;
+    font-size: 18px;
+    font-family: NovecentowideBold;
+    box-shadow: 0px -1px 0px rgba(0,0,0,0.6) inset;
+    border-radius: 20px 20px 2px 2px;
+}
+
+/** 4.3. Grain **/
+.hourglass .grain {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    left: 50%;
+    top: 50%;
+    margin: 0px 0 0 -2px;
+    z-index: 3;
+    border-radius: 100%;
+    display: none;
+}
+
+/* 5. Slides */
+.slide {
+    width: 100%;
+    height: 0px;
+    background: #000;
+    position: fixed !important;
+    margin-bottom: 100px;
+    top: 0;
+    left: 0;
+    z-index: 10 !important;
+    border-bottom: 3px solid #ffffff;
+    text-align: center;
+}
+.bottom.slide {
+    top: auto;
+    bottom: 0;
+    margin-bottom: 0;
+    height: 0px;
+    border-top: 3px solid #fff;
+    border-bottom: none;
+}
+.slide > .panel {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.slide.bottom > .panel {
+    top: 20px;
+    bottom: auto;
+}
+.slide > .handle {
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+    background: #000000;
+    position: absolute;
+    margin: 0 auto;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+    overflow: hidden;
+    bottom: -53px;
+    margin-left: -50px;
+    left: 50%;
+}
+.bottom.slide > .handle {
+    border-bottom: none;
+    border-right: none;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    bottom: auto;
+    top: -53px;
+}
+.slide > .handle > .close {
+    bottom: 0;
+    cursor: pointer;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    width: 40px;
+    z-index: 3;
+    font-family: Pt Sans;
+    text-shadow: none !important;
+    color: #ffffff;
+    font-size: 43px;
+    line-height: 40px;
+    text-align: center;
+    opacity: 0;
+}
+.bottom.slide > .handle > .close {
+    right: auto;
+    bottom: auto;
+    left: 0;
+    top: 0;
+}
+.slide.active:hover > .handle > .close {
+    opacity: 1;
+}
+.slide > .handle > .content {
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* 6. Logo */
+.logo, .map {
+    width: 90px;
+    height: 90px;
+    margin: 5px auto;
+    background: url(../img/logo.png) no-repeat 50% 50%;
+    display: block;
+    text-align: left;
+    text-indent: -1000em;
+    background-size: 75% !important;
+    cursor: pointer;
+    bottom: -25px;
+    right: 5px;
+    position: absolute;
+    -webkit-background-size: 100% auto;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+.slide .map {
+    background: url(../img/navigation-map.png) no-repeat 50% 50%;
+    background-size: 50% auto !important;
+    bottom: auto;
+    top: -25px;
+}
+.slide.active .logo {
+    bottom: 0;
+    background-size: 100% !important;
+}
+.slide.active .map {
+    top: 0;
+    background-size: 75% !important;
+}
+#map.modal iframe {
+    width: 100%;
+    height: 300px;
+}
+
+/* 7. Feedback icons */
+.feedback {
+    font-family: batchregular;
+    color: #fff;
+    line-height: 50px;
+    display: inline-block;
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    margin: 5px 5px 35px;
+    text-decoration: none !important;
+    opacity: 0.8;
+    text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.5);
+    vertical-align: top;
+}
+.feedback:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+/* 8. Social */
+a.social {
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: "Grands";
+    font-size: 35px;
+    height: 50px;
+    line-height: 50px;
+    margin: 5px;
+    opacity: 0.8;
+    text-decoration: none !important;
+    text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.5);
+    vertical-align: top;
+    width: 50px;
+}
+a.social:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+a.social:active {
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.5) inset;
+    line-height: 55px;
+}
+
+/* 9. Responsiveness */
+/** 9.1. Max 479px **/
+@media (max-width: 479px) {
+
+}
+/** 9.2. Min 480px **/
+@media (min-width: 480px) {
+
+}
+/** 9.3. Min 768px **/
+@media (min-width: 768px) {
+}
+/** 9.4. Min 980px **/
+@media (min-width: 980px) {
+
+}
+/** 9.5. Min 1200px **/
+@media (min-width: 1200px) {
+
+}
+
+/** 9.6. Portrait **/
+@media screen and (orientation:portrait) {
+    #page_wrap, .hourglass .fixed {
+        background-size: auto 120%;
+    }
+}
+
+/** 9.7. Landscape **/
+@media screen and (orientation:landscape) {
+    #page_wrap, .hourglass .fixed {
+        background-size: 120% auto;
+    }
+}
